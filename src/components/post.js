@@ -22,7 +22,7 @@ class Post extends Component {
         var n = str.lastIndexOf('/');
         var link = str.substring(n + 1, str.length);
 
-        if((n+1) ==str.length) {
+        if((n+1) == str.length) {
             link = str.slice(0, n);
             n = link.lastIndexOf('/');
             link = str.substring(n + 1, str.length -1);
@@ -83,14 +83,13 @@ class Post extends Component {
                     </a>
                 </div>
                 <AnimateHeight
-                        duration={500}
-                        height={this.state.height}
-                    >
-                        <div className='result-post__links'>
-                            {this.renderLinks()}
-                        </div>
-                    </AnimateHeight>
-                
+                    duration={500}
+                    height={this.state.height}
+                >
+                    <div className='result-post__links'>
+                        {this.renderLinks()}
+                    </div>
+                </AnimateHeight>
             </li>
         )
     }
